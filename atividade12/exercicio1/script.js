@@ -18,7 +18,12 @@ function calcular(array) {
     };
 }
 
-const numeros = [2, 3, 4];
+const numeros = [];
+for (let i = 0; i < 3; i++) {
+    const numero = parseFloat(prompt(`Digite o número ${i + 1}:`));
+    numeros.push(numero);
+}
+
 const resultado = calcular(numeros);
 
 alert(`Soma: ${resultado.soma}`);
